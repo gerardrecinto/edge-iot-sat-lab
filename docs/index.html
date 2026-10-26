@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>edge-iot-sat-lab</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--bg:#f7f7f5;--fg:#1c1c1a;--mut:#6b6b66;--card:#fff;--line:#dcdcd6;--sos:#b3261e;--norm:#3b6fd4;--bulk:#8a8a84;--out:#f3dede;--link:#3b6fd4;--ok:#1b7f4b}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--fg:#ecece8;--mut:#9a9a94;--card:#1d1d1b;--line:#333330;--sos:#e06666;--norm:#6d9bf0;--bulk:#8d8d88;--out:#3a2222;--link:#6d9bf0;--ok:#3fb97a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:16px;margin:26px 0 8px}p{margin:6px 0}.mut{color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;overflow-x:auto}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat b{display:block;font-size:22px}.stat span{font-size:12px;color:var(--mut)}
+svg{width:100%;height:auto;display:block}svg text{fill:var(--mut);font:11px system-ui}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px}
+.legend span{margin-right:14px;font-size:13px}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}
+a{color:var(--link)}code{font:13px ui-monospace,Menlo,monospace}
+</style>
+</head>
+<body>
+<main>
+<h1>edge-iot-sat-lab</h1>
+<p class="mut">A device with a bounded, prioritised, disk-backed queue publishing over MQTT through a link that drops out, to a ground station. The broker (mochi-mqtt) and client (Eclipse Paho) are real; the link is a TCP proxy that adds latency and cuts connections. All numbers are recorded from one real-time run of <code>cmd/scenario</code>. Personal learning project, not a satellite system.</p>
+
+<h2>One run</h2>
+<div class="card"><div class="stats" id="stats"></div></div>
+
+<h2>Messages across an outage</h2>
+<div class="card">
+  <p class="legend"><span><i class="dot" style="background:var(--sos)"></i>SOS</span><span><i class="dot" style="background:var(--norm)"></i>GPS telemetry</span><span><i class="dot" style="background:var(--bulk)"></i>bulk logs</span><span class="mut">Each line runs from when the message was queued (left end) to when the ground station first received it (right end). Shaded: link down.</span></p>
+  <svg id="tl" viewBox="0 0 960 280" role="img" aria-label="message timeline"></svg>
+</div>
+
+<div class="grid" style="margin-top:12px">
+  <div><h2>GPS track at the ground station</h2><div class="card"><svg id="map" viewBox="0 0 460 300" role="img" aria-label="GPS track"></svg><p class="mut" id="mapnote"></p></div></div>
+  <div><h2>How it behaves</h2><div class="card">
+    <p><b>Nothing is lost.</b> A message leaves the queue only after the broker's acknowledgement, so a cut link means a retry, not a loss.</p>
+    <p><b>Duplicates are possible.</b> With QoS 1, a message can be delivered twice if the link drops after the broker took it but before the device saw the acknowledgement. The ground station deduplicates by message id.</p>
+    <p><b>SOS goes first.</b> When the link returns, the queue drains by priority, then arrival order. The SOS message was queued mid-outage and was delivered ahead of everything queued before it.</p>
+    <p><b>Corrupt sentences are rejected.</b> Some telemetry carries a flipped character; the NMEA checksum catches it on the ground.</p>
+  </div></div>
+</div>
+
+<h2>Not covered</h2>
+<div class="card"><p>No real radio, satellite or modem. The link model is latency plus hard outages, with no bandwidth cap, loss bursts or Doppler. No Bluetooth, Wi-Fi or LTE/5G handling in this repo; for cellular I have separate repos (<code>nr-ca-analyzer</code>, <code>6g-ran-edge-lab</code>). No MQTT 5, no TLS, no broker clustering, and no tests of a full disk. The device and ground station run in one process on loopback.</p></div>
+
+<h2>References</h2>
+<div class="card"><ul>
+<li>OASIS, <a href="https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html">MQTT Version 3.1.1</a> (QoS levels, sessions, keep-alive) and <a href="https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html">MQTT 5.0</a></li>
+<li><a href="https://pkg.go.dev/github.com/eclipse/paho.mqtt.golang">Eclipse Paho Go client</a> and <a href="https://github.com/mochi-mqtt/server">mochi-mqtt server</a></li>
+<li><a href="https://gpsd.gitlab.io/gpsd/NMEA.html">NMEA 0183 sentence reference (gpsd)</a> for GGA and RMC</li>
+<li>IETF, <a href="https://datatracker.ietf.org/doc/html/rfc4838">RFC 4838: Delay-Tolerant Networking Architecture</a> and <a href="https://www.rfc-editor.org/rfc/rfc9171">RFC 9171: Bundle Protocol Version 7</a>, the store-and-forward idea this queue borrows from</li>
+</ul></div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const col=p=>p===0?'var(--sos)':p===1?'var(--norm)':'var(--bulk)';
+fetch('data.json').then(r=>r.json()).then(d=>{
+  const s=d.stats;
+  $('stats').innerHTML=[[s.delivered+' / '+s.sent,'messages delivered'],[s.duplicateDeliveries,'duplicate deliveries (deduped)'],[s.reconnects,'MQTT connections'],[Math.round(s.normalDelayP50Ms)+' ms','median telemetry delay'],[Math.round(s.normalDelayP95Ms)+' ms','p95 telemetry delay'],[d.rejectedSentences,'corrupt NMEA sentences rejected']].map(x=>'<div class="stat"><b>'+x[0]+'</b><span>'+x[1]+'</span></div>').join('');
+  const W=960,H=280,L=60,R=20,T=14,B=30,end=Math.max(...d.messages.map(m=>Math.max(m.deliverMs,m.enqueueMs)))+200;
+  const x=t=>L+(W-L-R)*t/end, lane={0:60,1:130,2:200};
+  let g='';
+  d.outages.forEach(o=>g+='<rect x="'+x(o.From)+'" y="'+T+'" width="'+(x(o.To)-x(o.From))+'" height="'+(H-T-B)+'" fill="var(--out)"/>');
+  [['SOS',0],['telemetry',1],['bulk',2]].forEach(([n,p])=>g+='<text x="4" y="'+(lane[p]+4)+'">'+n+'</text><line x1="'+L+'" x2="'+(W-R)+'" y1="'+lane[p]+'" y2="'+lane[p]+'" stroke="var(--line)"/>');
+  for(let t=0;t<=end;t+=1000)g+='<text x="'+x(t)+'" y="'+(H-10)+'" text-anchor="middle">'+(t/1000)+' s</text>';
+  d.messages.forEach((m,i)=>{const y=lane[m.prio]+(m.prio===1?((i%5)-2)*6:0);
+    if(m.deliverMs>=0)g+='<line x1="'+x(m.enqueueMs)+'" x2="'+x(m.deliverMs)+'" y1="'+y+'" y2="'+y+'" stroke="'+col(m.prio)+'" stroke-width="2" opacity=".55"/><circle cx="'+x(m.deliverMs)+'" cy="'+y+'" r="3.2" fill="'+col(m.prio)+'"/>';
+    g+='<circle cx="'+x(m.enqueueMs)+'" cy="'+y+'" r="2" fill="var(--fg)"/>'});
+  $('tl').innerHTML=g;
+  const f=d.fixes, la=f.map(p=>p.lat), lo=f.map(p=>p.lon), a=Math.min(...la), b=Math.max(...la), c=Math.min(...lo), e=Math.max(...lo);
+  const mx=lon=>20+420*(lon-c)/(e-c||1), my=lat=>280-260*(lat-a)/(b-a||1);
+  let m='<polyline fill="none" stroke="var(--line)" stroke-width="2" points="'+f.map(p=>mx(p.lon)+','+my(p.lat)).join(' ')+'"/>';
+  f.forEach(p=>{const inOut=d.outages.some(o=>p.t>=o.To&&p.t<o.To+1500);m+='<circle cx="'+mx(p.lon)+'" cy="'+my(p.lat)+'" r="'+(p.id==='sos-1'?6:3.5)+'" fill="'+(p.id==='sos-1'?'var(--sos)':'var(--norm)')+'"/>'});
+  $('map').innerHTML=m;
+  $('mapnote').textContent=f.length+' valid fixes parsed from NMEA GGA sentences ('+d.rejectedSentences+' rejected on checksum). The gaps in the path are the corrupted sentences. The red point is the SOS position.';
+}).catch(()=>{document.querySelector('main p').textContent='Could not load data.json. Serve this folder over HTTP: python3 -m http.server -d docs'});
+</script>
+</body>
+</html>

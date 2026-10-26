@@ -1,0 +1,1071 @@
+{
+ "fixes": [
+  {
+   "id": "gps-00",
+   "lat": 32.7157,
+   "lon": -117.1611,
+   "t": 58
+  },
+  {
+   "id": "gps-01",
+   "lat": 32.7165,
+   "lon": -117.16,
+   "t": 163
+  },
+  {
+   "id": "gps-02",
+   "lat": 32.7173,
+   "lon": -117.1589,
+   "t": 272
+  },
+  {
+   "id": "gps-03",
+   "lat": 32.7181,
+   "lon": -117.1578,
+   "t": 379
+  },
+  {
+   "id": "gps-04",
+   "lat": 32.7189,
+   "lon": -117.1567,
+   "t": 485
+  },
+  {
+   "id": "gps-05",
+   "lat": 32.7197,
+   "lon": -117.1556,
+   "t": 591
+  },
+  {
+   "id": "gps-06",
+   "lat": 32.7205,
+   "lon": -117.1545,
+   "t": 681
+  },
+  {
+   "id": "gps-08",
+   "lat": 32.7221,
+   "lon": -117.1523,
+   "t": 894
+  },
+  {
+   "id": "gps-10",
+   "lat": 32.7237,
+   "lon": -117.1501,
+   "t": 1109
+  },
+  {
+   "id": "gps-11",
+   "lat": 32.7245,
+   "lon": -117.149,
+   "t": 1217
+  },
+  {
+   "id": "gps-12",
+   "lat": 32.7253,
+   "lon": -117.1479,
+   "t": 1306
+  },
+  {
+   "id": "gps-13",
+   "lat": 32.7261,
+   "lon": -117.1468,
+   "t": 1415
+  },
+  {
+   "id": "gps-14",
+   "lat": 32.7269,
+   "lon": -117.1457,
+   "t": 1523
+  },
+  {
+   "id": "gps-15",
+   "lat": 32.7277,
+   "lon": -117.1446,
+   "t": 1631
+  },
+  {
+   "id": "gps-16",
+   "lat": 32.7285,
+   "lon": -117.1435,
+   "t": 1737
+  },
+  {
+   "id": "gps-17",
+   "lat": 32.7293,
+   "lon": -117.1424,
+   "t": 1844
+  },
+  {
+   "id": "gps-18",
+   "lat": 32.7301,
+   "lon": -117.1413,
+   "t": 1950
+  },
+  {
+   "id": "sos-1",
+   "lat": 32.7421,
+   "lon": -117.1248,
+   "t": 4954
+  },
+  {
+   "id": "gps-20",
+   "lat": 32.731700000000004,
+   "lon": -117.1391,
+   "t": 5042
+  },
+  {
+   "id": "gps-21",
+   "lat": 32.7325,
+   "lon": -117.138,
+   "t": 5127
+  },
+  {
+   "id": "gps-22",
+   "lat": 32.7333,
+   "lon": -117.1369,
+   "t": 5213
+  },
+  {
+   "id": "gps-23",
+   "lat": 32.7341,
+   "lon": -117.1358,
+   "t": 5300
+  },
+  {
+   "id": "gps-24",
+   "lat": 32.7349,
+   "lon": -117.1347,
+   "t": 5387
+  },
+  {
+   "id": "gps-25",
+   "lat": 32.7357,
+   "lon": -117.1336,
+   "t": 5474
+  },
+  {
+   "id": "gps-26",
+   "lat": 32.7365,
+   "lon": -117.1325,
+   "t": 5560
+  },
+  {
+   "id": "gps-27",
+   "lat": 32.7373,
+   "lon": -117.1314,
+   "t": 5646
+  },
+  {
+   "id": "gps-28",
+   "lat": 32.7381,
+   "lon": -117.1303,
+   "t": 5735
+  },
+  {
+   "id": "gps-30",
+   "lat": 32.7397,
+   "lon": -117.1281,
+   "t": 5822
+  },
+  {
+   "id": "gps-32",
+   "lat": 32.7413,
+   "lon": -117.1259,
+   "t": 5995
+  },
+  {
+   "id": "gps-34",
+   "lat": 32.7429,
+   "lon": -117.1237,
+   "t": 6081
+  },
+  {
+   "id": "gps-35",
+   "lat": 32.7437,
+   "lon": -117.1226,
+   "t": 6168
+  },
+  {
+   "id": "gps-36",
+   "lat": 32.7445,
+   "lon": -117.1215,
+   "t": 6257
+  },
+  {
+   "id": "gps-37",
+   "lat": 32.7453,
+   "lon": -117.1204,
+   "t": 6344
+  },
+  {
+   "id": "gps-38",
+   "lat": 32.7461,
+   "lon": -117.1193,
+   "t": 6431
+  },
+  {
+   "id": "gps-40",
+   "lat": 32.7477,
+   "lon": -117.1171,
+   "t": 6518
+  },
+  {
+   "id": "gps-41",
+   "lat": 32.7485,
+   "lon": -117.116,
+   "t": 6605
+  },
+  {
+   "id": "gps-42",
+   "lat": 32.7493,
+   "lon": -117.1149,
+   "t": 6691
+  },
+  {
+   "id": "gps-44",
+   "lat": 32.7509,
+   "lon": -117.1127,
+   "t": 6865
+  },
+  {
+   "id": "gps-45",
+   "lat": 32.7517,
+   "lon": -117.1116,
+   "t": 6951
+  },
+  {
+   "id": "gps-46",
+   "lat": 32.7525,
+   "lon": -117.1105,
+   "t": 7036
+  },
+  {
+   "id": "gps-47",
+   "lat": 32.7533,
+   "lon": -117.1094,
+   "t": 7122
+  },
+  {
+   "id": "gps-48",
+   "lat": 32.7541,
+   "lon": -117.1083,
+   "t": 7207
+  },
+  {
+   "id": "gps-50",
+   "lat": 32.7557,
+   "lon": -117.1061,
+   "t": 7295
+  },
+  {
+   "id": "gps-51",
+   "lat": 32.7565,
+   "lon": -117.105,
+   "t": 7381
+  },
+  {
+   "id": "gps-52",
+   "lat": 32.7573,
+   "lon": -117.1039,
+   "t": 7467
+  },
+  {
+   "id": "gps-53",
+   "lat": 32.7581,
+   "lon": -117.1028,
+   "t": 7554
+  },
+  {
+   "id": "gps-54",
+   "lat": 32.7589,
+   "lon": -117.1017,
+   "t": 7641
+  },
+  {
+   "id": "gps-56",
+   "lat": 32.7605,
+   "lon": -117.0995,
+   "t": 7815
+  },
+  {
+   "id": "gps-57",
+   "lat": 32.7613,
+   "lon": -117.0984,
+   "t": 7902
+  },
+  {
+   "id": "gps-58",
+   "lat": 32.7621,
+   "lon": -117.0973,
+   "t": 7989
+  },
+  {
+   "id": "gps-60",
+   "lat": 32.7637,
+   "lon": -117.0951,
+   "t": 8075
+  },
+  {
+   "id": "gps-61",
+   "lat": 32.7645,
+   "lon": -117.094,
+   "t": 8161
+  },
+  {
+   "id": "gps-62",
+   "lat": 32.7653,
+   "lon": -117.0929,
+   "t": 8248
+  },
+  {
+   "id": "gps-63",
+   "lat": 32.7661,
+   "lon": -117.0918,
+   "t": 8333
+  },
+  {
+   "id": "gps-64",
+   "lat": 32.7669,
+   "lon": -117.0907,
+   "t": 8420
+  },
+  {
+   "id": "gps-65",
+   "lat": 32.7677,
+   "lon": -117.0896,
+   "t": 8507
+  },
+  {
+   "id": "gps-66",
+   "lat": 32.7685,
+   "lon": -117.0885,
+   "t": 8594
+  },
+  {
+   "id": "gps-68",
+   "lat": 32.7701,
+   "lon": -117.0863,
+   "t": 8768
+  }
+ ],
+ "messages": [
+  {
+   "id": "gps-00",
+   "prio": 1,
+   "enqueueMs": 0,
+   "deliverMs": 58,
+   "delayMs": 58,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-01",
+   "prio": 1,
+   "enqueueMs": 112,
+   "deliverMs": 163,
+   "delayMs": 51,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-02",
+   "prio": 1,
+   "enqueueMs": 217,
+   "deliverMs": 272,
+   "delayMs": 55,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-03",
+   "prio": 1,
+   "enqueueMs": 322,
+   "deliverMs": 379,
+   "delayMs": 57,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-04",
+   "prio": 1,
+   "enqueueMs": 426,
+   "deliverMs": 485,
+   "delayMs": 59,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-05",
+   "prio": 1,
+   "enqueueMs": 529,
+   "deliverMs": 591,
+   "delayMs": 62,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-06",
+   "prio": 1,
+   "enqueueMs": 632,
+   "deliverMs": 681,
+   "delayMs": 49,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-07",
+   "prio": 1,
+   "enqueueMs": 737,
+   "deliverMs": 787,
+   "delayMs": 50,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-08",
+   "prio": 1,
+   "enqueueMs": 841,
+   "deliverMs": 894,
+   "delayMs": 53,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "bulk-09",
+   "prio": 2,
+   "enqueueMs": 944,
+   "deliverMs": 1002,
+   "delayMs": 58,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "bulk log chunk"
+  },
+  {
+   "id": "gps-10",
+   "prio": 1,
+   "enqueueMs": 1048,
+   "deliverMs": 1109,
+   "delayMs": 61,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-11",
+   "prio": 1,
+   "enqueueMs": 1152,
+   "deliverMs": 1217,
+   "delayMs": 65,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-12",
+   "prio": 1,
+   "enqueueMs": 1257,
+   "deliverMs": 1306,
+   "delayMs": 49,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-13",
+   "prio": 1,
+   "enqueueMs": 1363,
+   "deliverMs": 1415,
+   "delayMs": 52,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-14",
+   "prio": 1,
+   "enqueueMs": 1468,
+   "deliverMs": 1523,
+   "delayMs": 55,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-15",
+   "prio": 1,
+   "enqueueMs": 1572,
+   "deliverMs": 1631,
+   "delayMs": 59,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-16",
+   "prio": 1,
+   "enqueueMs": 1677,
+   "deliverMs": 1737,
+   "delayMs": 60,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-17",
+   "prio": 1,
+   "enqueueMs": 1781,
+   "deliverMs": 1844,
+   "delayMs": 63,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-18",
+   "prio": 1,
+   "enqueueMs": 1885,
+   "deliverMs": 1950,
+   "delayMs": 65,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "bulk-19",
+   "prio": 2,
+   "enqueueMs": 1991,
+   "deliverMs": 2057,
+   "delayMs": 66,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "bulk log chunk"
+  },
+  {
+   "id": "gps-20",
+   "prio": 1,
+   "enqueueMs": 2098,
+   "deliverMs": 5042,
+   "delayMs": 2944,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-21",
+   "prio": 1,
+   "enqueueMs": 2207,
+   "deliverMs": 5127,
+   "delayMs": 2920,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-22",
+   "prio": 1,
+   "enqueueMs": 2312,
+   "deliverMs": 5213,
+   "delayMs": 2901,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-23",
+   "prio": 1,
+   "enqueueMs": 2417,
+   "deliverMs": 5300,
+   "delayMs": 2883,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-24",
+   "prio": 1,
+   "enqueueMs": 2522,
+   "deliverMs": 5387,
+   "delayMs": 2865,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-25",
+   "prio": 1,
+   "enqueueMs": 2628,
+   "deliverMs": 5474,
+   "delayMs": 2846,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-26",
+   "prio": 1,
+   "enqueueMs": 2732,
+   "deliverMs": 5560,
+   "delayMs": 2828,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-27",
+   "prio": 1,
+   "enqueueMs": 2838,
+   "deliverMs": 5646,
+   "delayMs": 2808,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-28",
+   "prio": 1,
+   "enqueueMs": 2943,
+   "deliverMs": 5735,
+   "delayMs": 2792,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "bulk-29",
+   "prio": 2,
+   "enqueueMs": 3048,
+   "deliverMs": 8854,
+   "delayMs": 5806,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "bulk log chunk"
+  },
+  {
+   "id": "gps-30",
+   "prio": 1,
+   "enqueueMs": 3153,
+   "deliverMs": 5822,
+   "delayMs": 2669,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-31",
+   "prio": 1,
+   "enqueueMs": 3258,
+   "deliverMs": 5908,
+   "delayMs": 2650,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-32",
+   "prio": 1,
+   "enqueueMs": 3371,
+   "deliverMs": 5995,
+   "delayMs": 2624,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "sos-1",
+   "prio": 0,
+   "enqueueMs": 3476,
+   "deliverMs": 4954,
+   "delayMs": 1478,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "SOS"
+  },
+  {
+   "id": "gps-34",
+   "prio": 1,
+   "enqueueMs": 3582,
+   "deliverMs": 6081,
+   "delayMs": 2499,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-35",
+   "prio": 1,
+   "enqueueMs": 3687,
+   "deliverMs": 6168,
+   "delayMs": 2481,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-36",
+   "prio": 1,
+   "enqueueMs": 3792,
+   "deliverMs": 6257,
+   "delayMs": 2465,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-37",
+   "prio": 1,
+   "enqueueMs": 3898,
+   "deliverMs": 6344,
+   "delayMs": 2446,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-38",
+   "prio": 1,
+   "enqueueMs": 4003,
+   "deliverMs": 6431,
+   "delayMs": 2428,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "bulk-39",
+   "prio": 2,
+   "enqueueMs": 4108,
+   "deliverMs": 8941,
+   "delayMs": 4833,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "bulk log chunk"
+  },
+  {
+   "id": "gps-40",
+   "prio": 1,
+   "enqueueMs": 4213,
+   "deliverMs": 6518,
+   "delayMs": 2305,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-41",
+   "prio": 1,
+   "enqueueMs": 4319,
+   "deliverMs": 6605,
+   "delayMs": 2286,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-42",
+   "prio": 1,
+   "enqueueMs": 4424,
+   "deliverMs": 6691,
+   "delayMs": 2267,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-43",
+   "prio": 1,
+   "enqueueMs": 4530,
+   "deliverMs": 6778,
+   "delayMs": 2248,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-44",
+   "prio": 1,
+   "enqueueMs": 4635,
+   "deliverMs": 6865,
+   "delayMs": 2230,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-45",
+   "prio": 1,
+   "enqueueMs": 4741,
+   "deliverMs": 6951,
+   "delayMs": 2210,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-46",
+   "prio": 1,
+   "enqueueMs": 4846,
+   "deliverMs": 7036,
+   "delayMs": 2190,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-47",
+   "prio": 1,
+   "enqueueMs": 4952,
+   "deliverMs": 7122,
+   "delayMs": 2170,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-48",
+   "prio": 1,
+   "enqueueMs": 5057,
+   "deliverMs": 7207,
+   "delayMs": 2150,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "bulk-49",
+   "prio": 2,
+   "enqueueMs": 5161,
+   "deliverMs": 9027,
+   "delayMs": 3866,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "bulk log chunk"
+  },
+  {
+   "id": "gps-50",
+   "prio": 1,
+   "enqueueMs": 5266,
+   "deliverMs": 7295,
+   "delayMs": 2029,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-51",
+   "prio": 1,
+   "enqueueMs": 5371,
+   "deliverMs": 7381,
+   "delayMs": 2010,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-52",
+   "prio": 1,
+   "enqueueMs": 5475,
+   "deliverMs": 7467,
+   "delayMs": 1992,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-53",
+   "prio": 1,
+   "enqueueMs": 5580,
+   "deliverMs": 7554,
+   "delayMs": 1974,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-54",
+   "prio": 1,
+   "enqueueMs": 5686,
+   "deliverMs": 7641,
+   "delayMs": 1955,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-55",
+   "prio": 1,
+   "enqueueMs": 5791,
+   "deliverMs": 7728,
+   "delayMs": 1937,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-56",
+   "prio": 1,
+   "enqueueMs": 5896,
+   "deliverMs": 7815,
+   "delayMs": 1919,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-57",
+   "prio": 1,
+   "enqueueMs": 6001,
+   "deliverMs": 7902,
+   "delayMs": 1901,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-58",
+   "prio": 1,
+   "enqueueMs": 6104,
+   "deliverMs": 7989,
+   "delayMs": 1885,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "bulk-59",
+   "prio": 2,
+   "enqueueMs": 6209,
+   "deliverMs": 9113,
+   "delayMs": 2904,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "bulk log chunk"
+  },
+  {
+   "id": "gps-60",
+   "prio": 1,
+   "enqueueMs": 6313,
+   "deliverMs": 8075,
+   "delayMs": 1762,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-61",
+   "prio": 1,
+   "enqueueMs": 6418,
+   "deliverMs": 8161,
+   "delayMs": 1743,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-62",
+   "prio": 1,
+   "enqueueMs": 6523,
+   "deliverMs": 8248,
+   "delayMs": 1725,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-63",
+   "prio": 1,
+   "enqueueMs": 6628,
+   "deliverMs": 8333,
+   "delayMs": 1705,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-64",
+   "prio": 1,
+   "enqueueMs": 6733,
+   "deliverMs": 8420,
+   "delayMs": 1687,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-65",
+   "prio": 1,
+   "enqueueMs": 6842,
+   "deliverMs": 8507,
+   "delayMs": 1665,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-66",
+   "prio": 1,
+   "enqueueMs": 6947,
+   "deliverMs": 8594,
+   "delayMs": 1647,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-67",
+   "prio": 1,
+   "enqueueMs": 7052,
+   "deliverMs": 8681,
+   "delayMs": 1629,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "gps-68",
+   "prio": 1,
+   "enqueueMs": 7156,
+   "deliverMs": 8768,
+   "delayMs": 1612,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "gps"
+  },
+  {
+   "id": "bulk-69",
+   "prio": 2,
+   "enqueueMs": 7261,
+   "deliverMs": 9199,
+   "delayMs": 1938,
+   "attempts": 1,
+   "duplicates": 0,
+   "kind": "bulk log chunk"
+  }
+ ],
+ "outages": [
+  {
+   "From": 2098,
+   "To": 4741
+  }
+ ],
+ "rejectedSentences": 5,
+ "stats": {
+  "delivered": 70,
+  "duplicateDeliveries": 0,
+  "normalDelayP50Ms": 1937,
+  "normalDelayP95Ms": 2865,
+  "oneWayLatencyMs": 40,
+  "queueLeft": 0,
+  "reconnects": 2,
+  "sent": 70
+ }
+}
